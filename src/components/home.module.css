@@ -1,0 +1,28 @@
+.box {
+  margin: 1rem;
+  padding: 0rem 10rem;
+}
+
+.chart {
+  width: 35rem;
+  height: 35rem;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+    margin: 2rem 0rem;
+    align-items: center;
+    color: gray;
+}
+
+.tableWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+}
