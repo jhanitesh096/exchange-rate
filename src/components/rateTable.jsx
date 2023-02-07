@@ -2,10 +2,10 @@ import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import style from './home.module.css'
+import style from "./home.module.css";
 
 const columns = [
-  { field: "id", headerName: "Currency",width:350  },
+  { field: "id", headerName: "Currency", width: 350 },
   { field: "name", headerName: "Rate", width: 350 },
 ];
 
@@ -20,10 +20,8 @@ export default function DataTable() {
     setRows(rows);
   }, [exchangeRates]);
   return (
-    <section
-      className={style.tableWrapper}
-    >
-      <div style={{ height: 400, width: "50%" }}>
+    <section className={style.tableWrapper}>
+      <div className={style.table}>
         {rows ? (
           <DataGrid
             rows={rows}
